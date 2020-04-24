@@ -4,7 +4,7 @@ class Player {
   #cardLimit = 0;
 
   constructor(cardLimit, hand, name) {
-    this.cardLimit = cardLimit;
+    this.#cardLimit = cardLimit;
     this.hand = hand;
     this.name = name;
   }
@@ -18,7 +18,7 @@ class Player {
   }
 
   discardOne() {
-    this.hand.pop()
+    return this.hand.pop()
   }
 
   playCard() {

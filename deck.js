@@ -51,7 +51,7 @@ class Deck {
 
   dealOneCard() {
     if (!this.cards.length) {
-      return "You've reach the end of the deck";
+      return "You've reached the end of the deck";
     }
 
     const dealtCard = this.cards.shift();
